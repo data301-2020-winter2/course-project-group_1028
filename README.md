@@ -19,7 +19,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project) or 
 
 - Person 1: Matthew Dante Sugiarto
 - Person 2: Akshat Poddar
-- Person 3: Askar Bolat
+- Person 3: Askar Bolat: my name is Askar and I am a third year Management student.
 
 ## References
 
