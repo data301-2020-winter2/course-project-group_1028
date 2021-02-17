@@ -26,7 +26,7 @@ We aim to create a dashboard by the end of our project to make it easier to visu
 
 ## Describe your dataset in about 150-200 words
 
-{Add your stuff here}
+This dataset was provided by “Capital Bikeshare”, a bicycle sharing system in multiple counties around Washington D.C. and Virginia. The data contains detailed information in bike sharing in terms of days and hours. For our project, we’ll be using the hours data. This data presents us with data on how many people use bikesharing on every hour of every day for 2 full years, taking the temperature, weather, humidity, wind, and whether the user is registered or not. The data itself is collected from the 1st of January 2011 up until the 31st of December 2012.  The dataset was created by the company to provide free public bike sharing information in hopes that they can be useful for people like developers, engineers, statisticians, and artists for the sake of analysis, development, visualization and more. The data itself is collected as it records the time and date when a bike is unlocked from a kiosk, how long it was used, and it matches it with the weather, temperature, air humidity, and windspeed that was recorded on each day.
 
 ## Team Members
 
