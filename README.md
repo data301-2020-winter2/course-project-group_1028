@@ -21,7 +21,7 @@ These are some of the following questions we aim to explore through our analysis
 7. Best conditions for cycling? (considering humidity, wind speed, temperature)
 
 
-We aim to create a dashboard by the end of our project to make it easier to visualize the enormous collection of data and analyze it clearly. 
+**We aim to create a dashboard by the end of our project to make it easier to visualize the enormous collection of data and analyze it clearly.**
 
 
 ## Describe your dataset in about 150-200 words
@@ -32,8 +32,8 @@ This dataset was provided by “Capital Bikeshare”, a bicycle sharing system i
 
 - Person 1: Matthew Dante Sugiarto
 - Person 2: Akshat Poddar
-- Person 3: Askar Bolat: my name is Askar and I am a third year Management student.
+*- Person 3: Askar Bolat: my name is Askar and I am a third year Management student.*
 
 ## References
 
-https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset
+(https://archive.ics.uci.edu/ml/datasets/bike+sharing+dataset)
