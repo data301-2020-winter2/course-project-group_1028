@@ -1,1 +1,2 @@
-We will store any external images we use for this project in this file.
+*This particular folder is to store any images that we will be using in our project analysis.*
+**This folder will be used for the above stated when needed.*
