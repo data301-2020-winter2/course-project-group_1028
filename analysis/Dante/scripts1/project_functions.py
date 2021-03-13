@@ -1,6 +1,8 @@
-def load_and_process(path):
-    
-    import pandas as pd
+#!/usr/bin/env python
+import pandas as pd
+
+def load_and_process(path):    
+
     load = (
     pd.read_csv(path,header = None)
     .rename(columns={0:"instant",1:"dteday",2:"season",3:"yr",4:"mnth",5:"hr",6:"holiday",7:"weekday",
