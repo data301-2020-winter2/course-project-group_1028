@@ -16,7 +16,7 @@ The dataset we have chosen is a from a very reliable source(UCI Machine Learning
 2. Which is the least favourable weather for cycling? 
 3. Which days are cycles borrowed the most? (Histogram for each day) 
 4. Which is the most favourable month for cycling? And why? (Average rental hour per month) 
-5. Compare average hours of cycling for casual and registered users and draw conclusions based on it.
+5. **Compare average hours of cycling for casual and registered users and draw conclusions based on it.**
 6. Weekdays or working-days, which one is more popular for renting a bike? 
 7. Best conditions for cycling? (considering humidity, wind speed, temperature)
 
