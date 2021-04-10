@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20211.21.0320.1853                               -->
-<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook original-version='18.1' source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <AutoCreateAndUpdateDSDPhoneLayouts />
     <_.fcp.MarkAnimation.true...MarkAnimation />
@@ -13,6 +13,7 @@
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='Group1028_Lab7' path='/t/data301/workbooks' revision='1.0' site='data301' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -22,7 +23,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='hour' name='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch'>
-            <connection class='textscan' directory='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/data/processed' filename='hour.csv' password='' port='0' server='' />
+            <connection class='textscan' directory='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/data/processed' filename='hour.csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch' name='hour.csv' table='[hour#csv]' type='table'>
@@ -96,7 +97,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>instant</remote-name>
@@ -108,7 +108,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>date</remote-name>
@@ -120,7 +119,6 @@
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>season</remote-name>
@@ -132,7 +130,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>yr</remote-name>
@@ -144,7 +141,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>mnth</remote-name>
@@ -156,7 +152,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>hr</remote-name>
@@ -168,7 +163,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>holiday</remote-name>
@@ -180,7 +174,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>weekday</remote-name>
@@ -192,7 +185,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>workingday</remote-name>
@@ -204,7 +196,6 @@
             <local-type>boolean</local-type>
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>weathersit</remote-name>
@@ -216,7 +207,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>temp</remote-name>
@@ -228,7 +218,6 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>atemp</remote-name>
@@ -240,7 +229,6 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>hum</remote-name>
@@ -252,7 +240,6 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>windspeed</remote-name>
@@ -264,7 +251,6 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>casual</remote-name>
@@ -276,7 +262,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>registered</remote-name>
@@ -288,7 +273,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>cnt</remote-name>
@@ -300,7 +284,6 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
       </connection>
@@ -336,6 +319,20 @@
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
+          <encoding attr='color' field='[attr:season:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[attr:weathersit:ok]' type='palette'>
             <map to='#4e79a7'>
               <bucket>1</bucket>
@@ -348,20 +345,6 @@
             </map>
             <map to='#e15759'>
               <bucket>3</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>2</bucket>
-            </map>
-          </encoding>
-          <encoding attr='color' field='[attr:season:ok]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>1</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>3</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>4</bucket>
             </map>
             <map to='#f28e2b'>
               <bucket>2</bucket>
@@ -1119,8 +1102,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Windspeed</run>
@@ -1216,8 +1199,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Humidity</run>
@@ -1309,8 +1292,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis to Temperature</run>
@@ -1407,8 +1390,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTIONS 1 AND 2:</run>
@@ -1509,8 +1492,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 3:</run>
@@ -1607,8 +1590,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 4:</run>
@@ -1705,8 +1688,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 5:</run>
@@ -1803,8 +1786,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 6:</run>
@@ -1898,8 +1881,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 7:</run>
@@ -2013,8 +1996,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='41' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='46' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='45' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='12296' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>ANALYSIS BY GROUP WEATHERBIKE (1028)</run>
@@ -2204,8 +2187,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='41' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2410,8 +2393,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='41' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2553,8 +2536,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='41' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2631,8 +2614,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='12' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='15' param='vert' w='98400' x='800' y='1000'>
                 <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98000' id='3' is-centered='0' is-fixed='true' param='C:/Users/ASUS/Downloads/Edgar/download.png' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2713,8 +2696,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='43' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='42' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>THESE ARE SOME OF THE QUESTIONS WE AIM TO EXPLORE THROUGH OUR ANALYSIS : </run>
@@ -2800,8 +2783,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='12' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='15' param='vert' w='98400' x='800' y='1000'>
                 <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98000' id='3' is-centered='0' is-fixed='true' param='C:/Users/ASUS/Downloads/Edgar/download (1).png' w='98400' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3033,27 +3016,27 @@
     </window>
     <window class='dashboard' name='Dataset Description'>
       <viewpoints />
-      <active id='12' />
+      <active id='-1' />
       <simple-id uuid='{5F3BA7CA-4277-4064-A94E-B6BF49942D97}' />
     </window>
     <window class='dashboard' name='Description of Dataset Columns Part 1'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{4F4393F0-DCDE-40F9-AD6D-E7D5D02ECF60}' />
     </window>
     <window class='dashboard' name='Description of Dataset Columns Part 2'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{8A86D30F-E29C-4F87-91B0-E667EB55BFB5}' />
     </window>
     <window class='dashboard' name='Description of Dataset Columns Part 3'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{7A385021-BE30-48FA-B516-D4DAF769198F}' />
     </window>
     <window class='dashboard' name='Research Questions'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{85606C4F-D7A2-4554-83B8-5A2F3CDE4913}' />
     </window>
     <window class='worksheet' name='Q1, Q2. Number of bikes borrowed in different weather (PieChart)'>
@@ -3094,7 +3077,7 @@
     </window>
     <window class='dashboard' name='Conclusion 1 and 2'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{90033CDC-1BC8-471E-BEF6-A02CAA491607}' />
     </window>
     <window class='worksheet' name='Q3.Number of bikes borrowed on different days'>
@@ -3130,7 +3113,7 @@
     </window>
     <window class='dashboard' name='Conclusion 3'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{4F8BBE58-C70B-49FA-A920-629C8FD73273}' />
     </window>
     <window class='worksheet' name='Q4. Months are Bicycles borrowed the most(Pie)'>
@@ -3171,7 +3154,7 @@
     </window>
     <window class='dashboard' name='Conclusion 4'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{6CE7E6EF-8418-41E6-83F3-9F5ABFE87678}' />
     </window>
     <window class='worksheet' name='Q5. Bikes Rented by Casual Users by Hours'>
@@ -3246,17 +3229,17 @@
     </window>
     <window class='dashboard' name='Conclusion 5'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{2777CE58-0C79-4A7B-BF93-88532135BEC2}' />
     </window>
     <window class='dashboard' name='Q6.Weekdays or working-days(Weekday)'>
       <viewpoints />
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{0D3EE470-B9EA-467D-A4F2-D2552CA4D80D}' />
     </window>
     <window class='dashboard' name='Weekdays or working-days(Working Day)'>
       <viewpoints />
-      <active id='3' />
+      <active id='-1' />
       <simple-id uuid='{0C1837A3-D6EA-4129-BDEE-7A6A65253005}' />
     </window>
     <window class='dashboard' maximized='true' name='Conclusion 6'>
@@ -3301,7 +3284,7 @@
     </window>
     <window class='dashboard' name='Analysis 1'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{81B84FFB-C8D1-40DC-80A3-B4A6D2B61D09}' />
     </window>
     <window class='worksheet' name='Q7. Best conditions for cycling (Humidity)'>
@@ -3341,7 +3324,7 @@
     </window>
     <window class='dashboard' name='Analysis 2'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{FB5A118F-FB94-427B-A15D-4A51E6123BD5}' />
     </window>
     <window class='worksheet' name='Q7. Best conditions for cycling (temperature)'>
@@ -3381,12 +3364,12 @@
     </window>
     <window class='dashboard' name='Analysis 3'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{C542F144-2E5B-434D-9D7D-C0C175E0BC57}' />
     </window>
     <window class='dashboard' name='Conclusion 7'>
       <viewpoints />
-      <active id='8' />
+      <active id='-1' />
       <simple-id uuid='{27C855EA-1334-46A5-AEF3-50E41D7B507E}' />
     </window>
   </windows>
