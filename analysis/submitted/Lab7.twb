@@ -872,34 +872,6 @@
       </table>
       <simple-id uuid='{418231F0-A700-47F2-AB9B-2CBD331F5111}' />
     </worksheet>
-    <worksheet name='Q6.Weekdays or working-days(Weekday)'>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
-          </datasources>
-          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
-            <column-instance column='[cnt]' derivation='Count' name='[cnt:cnt:qk]' pivot='key' type='quantitative' />
-            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
-            <column-instance column='[weekday]' derivation='None' name='[none:weekday:qk]' pivot='key' type='quantitative' />
-            <column caption='Weekday' datatype='integer' name='[weekday]' role='measure' type='quantitative' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style />
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-          </pane>
-        </panes>
-        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:weekday:qk]</rows>
-        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[cnt:cnt:qk]</cols>
-      </table>
-      <simple-id uuid='{93AB2B8A-9CCF-4F6F-9361-2D14579B4495}' />
-    </worksheet>
     <worksheet name='Q7. Best conditions for cycling (Humidity)'>
       <layout-options>
         <title>
@@ -1097,26 +1069,6 @@
       </table>
       <simple-id uuid='{533AAF8B-E79B-4453-84DE-016D4199E327}' />
     </worksheet>
-    <worksheet name='Weekdays or working-days(Working Day)'>
-      <table>
-        <view>
-          <datasources />
-          <aggregation value='true' />
-        </view>
-        <style />
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-          </pane>
-        </panes>
-        <rows />
-        <cols />
-      </table>
-      <simple-id uuid='{E7D3450E-339E-4C89-892D-5752EE1E132D}' />
-    </worksheet>
   </worksheets>
   <dashboards>
     <dashboard name='Analysis 1'>
@@ -1161,14 +1113,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Windspeed</run>
@@ -1197,7 +1149,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1258,14 +1210,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Humidity</run>
@@ -1291,7 +1243,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1351,14 +1303,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis to Temperature</run>
@@ -1383,7 +1335,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1449,14 +1401,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTIONS 1 AND 2:</run>
@@ -1487,7 +1439,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1551,14 +1503,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 3:</run>
@@ -1587,7 +1539,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1649,14 +1601,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 4:</run>
@@ -1683,7 +1635,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1747,14 +1699,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 5:</run>
@@ -1783,7 +1735,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1845,14 +1797,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 6:</run>
@@ -1879,7 +1831,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -1940,14 +1892,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 7:</run>
@@ -1973,7 +1925,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2055,14 +2007,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='19825' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/Screenshot 2021-04-06 at 3.57.01 PM.png' w='33016' x='57590' y='1533' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='19825' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/Screenshot 2021-04-06 at 3.57.01 PM.png' w='33016' x='57590' y='1533' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='32' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='31' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='42' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='41' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='12296' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>ANALYSIS BY GROUP WEATHERBIKE (1028)</run>
@@ -2075,7 +2027,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='159' h='19825' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/Screenshot 2021-04-06 at 3.57.01 PM.png' w='33016' x='57590' y='1533'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='159' h='19825' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/Screenshot 2021-04-06 at 3.57.01 PM.png' w='33016' x='57590' y='1533'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2252,8 +2204,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='28' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='27' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2458,8 +2410,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='28' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='27' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2601,8 +2553,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='28' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='27' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='38' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='37' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9684' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
@@ -2653,6 +2605,55 @@
         </devicelayout>
       </devicelayouts>
       <simple-id uuid='{E1BAC4DD-467D-4D2E-968A-8F14323630E8}' />
+    </dashboard>
+    <dashboard name='Q6.Weekdays or working-days(Weekday)'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98000' id='3' is-centered='0' param='C:/Users/ASUS/Downloads/Edgar/download.png' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='12' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98000' id='3' is-centered='0' is-fixed='true' param='C:/Users/ASUS/Downloads/Edgar/download.png' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{268F2FF4-D344-4915-B11A-A478E241A568}' />
     </dashboard>
     <dashboard name='Research Questions'>
       <style />
@@ -2706,14 +2707,14 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
       </zones>
       <devicelayouts>
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='28' param='vert' w='98640' x='680' y='1194'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='39' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97612' id='38' param='vert' w='98640' x='680' y='1194'>
                 <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='11534' id='3' w='98640' x='680' y='1194'>
                   <formatted-text>
                     <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>THESE ARE SOME OF THE QUESTIONS WE AIM TO EXPLORE THROUGH OUR ANALYSIS : </run>
@@ -2752,7 +2753,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Downloads/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -2774,8 +2775,57 @@
       </devicelayouts>
       <simple-id uuid='{2DB52280-A0F0-43A7-9858-1E78FDE439E3}' />
     </dashboard>
+    <dashboard name='Weekdays or working-days(Working Day)'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98000' id='3' is-centered='0' param='C:/Users/ASUS/Downloads/Edgar/download (1).png' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='12' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='11' param='vert' w='98400' x='800' y='1000'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98000' id='3' is-centered='0' is-fixed='true' param='C:/Users/ASUS/Downloads/Edgar/download (1).png' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1617BB58-79EF-4DD4-B2B4-6B37839002E9}' />
+    </dashboard>
   </dashboards>
-  <windows saved-dpi-scale-factor='1.25' source-height='30'>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
     <window class='worksheet' name='Temperature vs Humidity'>
       <cards>
         <edge name='left'>
@@ -3199,60 +3249,17 @@
       <active id='8' />
       <simple-id uuid='{2777CE58-0C79-4A7B-BF93-88532135BEC2}' />
     </window>
-    <window class='worksheet' name='Q6.Weekdays or working-days(Weekday)'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{3546A75C-EDF4-4550-9287-45CB75710995}' />
+    <window class='dashboard' name='Q6.Weekdays or working-days(Weekday)'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{0D3EE470-B9EA-467D-A4F2-D2552CA4D80D}' />
     </window>
-    <window class='worksheet' maximized='true' name='Weekdays or working-days(Working Day)'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <viewpoint>
-        <highlight>
-          <color-one-way>
-            <field>[federated.12uqra81q06dm811f1anr0pxv05v].[none:workingday:nk]</field>
-          </color-one-way>
-        </highlight>
-      </viewpoint>
-      <simple-id uuid='{135FBA32-F334-4DEA-9A84-CE7A62D906C1}' />
+    <window class='dashboard' name='Weekdays or working-days(Working Day)'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{0C1837A3-D6EA-4129-BDEE-7A6A65253005}' />
     </window>
-    <window class='dashboard' name='Conclusion 6'>
+    <window class='dashboard' maximized='true' name='Conclusion 6'>
       <viewpoints />
       <active id='3' />
       <simple-id uuid='{FD96CD3F-2317-42F0-B2C2-0D8FC13F1A0E}' />
@@ -10893,82 +10900,353 @@
     </thumbnail>
     <thumbnail height='192' name='Q6.Weekdays or working-days(Weekday)' width='192'>
       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
-      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
-      sRnojs4Ybv8AAAAASUVORK5CYII=
+      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
+      BCCjHU3/P3JY1sAkrEbeAAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='Q7. Best conditions for cycling (Humidity)' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
@@ -12723,17 +13001,329 @@
     </thumbnail>
     <thumbnail height='192' name='Weekdays or working-days(Working Day)' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
-      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
-      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
-      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
-      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
-      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
-      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
-      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
-      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
-      fBUOM1sAAAAASUVORK5CYII=
+      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
     </thumbnail>
   </thumbnails>
 </workbook>
