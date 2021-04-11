@@ -1,0 +1,3087 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0320.1853                               -->
+<workbook source-build='2021.1.0 (20211.21.0320.1853)' source-platform='win' version='18.1' xml:base='https://us-west-2b.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Group1028_Lab7' path='/t/data301/workbooks' revision='1.0' site='data301' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hour' inline='true' name='federated.12uqra81q06dm811f1anr0pxv05v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hour' name='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch'>
+            <connection class='textscan' directory='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/data/processed' filename='hour.csv' password='' port='0' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch' name='hour.csv' table='[hour#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='instant' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='integer' name='season' ordinal='3' />
+            <column datatype='integer' name='yr' ordinal='4' />
+            <column datatype='integer' name='mnth' ordinal='5' />
+            <column datatype='integer' name='hr' ordinal='6' />
+            <column datatype='integer' name='holiday' ordinal='7' />
+            <column datatype='integer' name='weekday' ordinal='8' />
+            <column datatype='boolean' name='workingday' ordinal='9' />
+            <column datatype='integer' name='weathersit' ordinal='10' />
+            <column datatype='real' name='temp' ordinal='11' />
+            <column datatype='real' name='atemp' ordinal='12' />
+            <column datatype='real' name='hum' ordinal='13' />
+            <column datatype='real' name='windspeed' ordinal='14' />
+            <column datatype='integer' name='casual' ordinal='15' />
+            <column datatype='integer' name='registered' ordinal='16' />
+            <column datatype='integer' name='cnt' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch' name='hour.csv' table='[hour#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='instant' ordinal='1' />
+            <column datatype='date' name='date' ordinal='2' />
+            <column datatype='integer' name='season' ordinal='3' />
+            <column datatype='integer' name='yr' ordinal='4' />
+            <column datatype='integer' name='mnth' ordinal='5' />
+            <column datatype='integer' name='hr' ordinal='6' />
+            <column datatype='integer' name='holiday' ordinal='7' />
+            <column datatype='integer' name='weekday' ordinal='8' />
+            <column datatype='boolean' name='workingday' ordinal='9' />
+            <column datatype='integer' name='weathersit' ordinal='10' />
+            <column datatype='real' name='temp' ordinal='11' />
+            <column datatype='real' name='atemp' ordinal='12' />
+            <column datatype='real' name='hum' ordinal='13' />
+            <column datatype='real' name='windspeed' ordinal='14' />
+            <column datatype='integer' name='casual' ordinal='15' />
+            <column datatype='integer' name='registered' ordinal='16' />
+            <column datatype='integer' name='cnt' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instant]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>instant</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>yr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mnth]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>mnth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hr]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>hr</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>holiday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[holiday]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>holiday</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekday]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>weekday</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workingday</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[workingday]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>workingday</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weathersit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weathersit]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>weathersit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>temp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atemp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atemp]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>atemp</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hum]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>hum</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>windspeed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[windspeed]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>windspeed</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>casual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[casual]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>casual</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>registered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[registered]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>registered</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cnt]</local-name>
+            <parent-name>[hour.csv]</parent-name>
+            <remote-alias>cnt</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hour.csv_810482538227490FAE9C79AAF23C6B54]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='hour.csv' datatype='table' name='[__tableau_internal_object_id__].[hour.csv_810482538227490FAE9C79AAF23C6B54]' role='measure' type='quantitative' />
+      <column caption='Atemp' datatype='real' name='[atemp]' role='measure' type='quantitative' />
+      <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+      <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Holiday' datatype='integer' name='[holiday]' role='measure' type='quantitative' />
+      <column caption='Hr' datatype='integer' name='[hr]' role='measure' type='quantitative' />
+      <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+      <column caption='Instant' datatype='integer' name='[instant]' role='measure' type='quantitative' />
+      <column caption='Mnth' datatype='integer' name='[mnth]' role='measure' type='quantitative' />
+      <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+      <column caption='Weathersit' datatype='integer' name='[weathersit]' role='measure' type='quantitative'>
+        <aliases>
+          <alias key='1' value='Clear, Few clouds, Partly cloudy, Partly cloudy' />
+          <alias key='2' value='Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist' />
+          <alias key='3' value='Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds' />
+          <alias key='4' value='Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog' />
+        </aliases>
+      </column>
+      <column caption='Weekday' datatype='integer' name='[weekday]' role='measure' type='quantitative' />
+      <column caption='Windspeed' datatype='real' name='[windspeed]' role='measure' type='quantitative' />
+      <column caption='Workingday' datatype='boolean' name='[workingday]' role='dimension' type='nominal' />
+      <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+      <column-instance column='[season]' derivation='Attribute' name='[attr:season:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[weathersit]' derivation='Attribute' name='[attr:weathersit:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[weekday]' derivation='Attribute' name='[attr:weekday:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[attr:weekday:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>%many-values%</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:season:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:weathersit:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>%many-values%</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hour.csv' id='hour.csv_810482538227490FAE9C79AAF23C6B54'>
+            <properties context=''>
+              <relation connection='textscan.0nr6vbb1qtwql116a4xcg0u7x3ch' name='hour.csv' table='[hour#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='instant' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='integer' name='season' ordinal='3' />
+                  <column datatype='integer' name='yr' ordinal='4' />
+                  <column datatype='integer' name='mnth' ordinal='5' />
+                  <column datatype='integer' name='hr' ordinal='6' />
+                  <column datatype='integer' name='holiday' ordinal='7' />
+                  <column datatype='integer' name='weekday' ordinal='8' />
+                  <column datatype='boolean' name='workingday' ordinal='9' />
+                  <column datatype='integer' name='weathersit' ordinal='10' />
+                  <column datatype='real' name='temp' ordinal='11' />
+                  <column datatype='real' name='atemp' ordinal='12' />
+                  <column datatype='real' name='hum' ordinal='13' />
+                  <column datatype='real' name='windspeed' ordinal='14' />
+                  <column datatype='integer' name='casual' ordinal='15' />
+                  <column datatype='integer' name='registered' ordinal='16' />
+                  <column datatype='integer' name='cnt' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Casual users vs Humidity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+            <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+            <column-instance column='[hum]' derivation='None' name='[none:hum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[casual]' derivation='Sum' name='[sum:casual:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]' scope='rows' value='Humidity' />
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:casual:qk]' scope='cols' value='Sum of casual users' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:casual:qk]</cols>
+      </table>
+      <simple-id uuid='{E0A3E422-861B-408C-90FB-9DFA9B9E41B2}' />
+    </worksheet>
+    <worksheet name='Number of bikes borrowed in different seasons'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column-instance column='[season]' derivation='Attribute' name='[attr:season:ok]' pivot='key' type='ordinal' />
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' scope='rows' value='Sum of Count of bikes borrowed' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:season:ok]' value='Seasons'>
+              <formatted-text>
+                <run>Seasons</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:season:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:season:qk]</cols>
+      </table>
+      <simple-id uuid='{EBDCF319-3A67-4835-98F0-EA8F6754C43A}' />
+    </worksheet>
+    <worksheet name='Number of bikes borrowed in different weather situations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column-instance column='[weathersit]' derivation='Attribute' name='[attr:weathersit:ok]' pivot='key' type='ordinal' />
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[cnt]' derivation='None' name='[none:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weathersit]' derivation='None' name='[none:weathersit:qk]' pivot='key' type='quantitative' />
+            <column caption='Weathersit' datatype='integer' name='[weathersit]' role='measure' type='quantitative'>
+              <aliases>
+                <alias key='1' value='Clear, Few clouds, Partly cloudy, Partly cloudy' />
+                <alias key='2' value='Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist' />
+                <alias key='3' value='Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds' />
+                <alias key='4' value='Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:weathersit:qk]' field-type='quantitative' min='0' range-type='fixedmin' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:weathersit:qk]' scope='rows' value='Weather' />
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:cnt:qk]' scope='cols' value='Count of bikes borrowed' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weathersit:ok]' value='Weather '>
+              <formatted-text>
+                <run>Weather </run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weathersit:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:weathersit:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:cnt:qk]</cols>
+      </table>
+      <simple-id uuid='{111AB554-A49B-421F-AAEB-3A8A2858C22D}' />
+    </worksheet>
+    <worksheet name='Number of bikes borrowed in different windspeeds'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[windspeed]' derivation='None' name='[none:windspeed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column caption='Windspeed' datatype='real' name='[windspeed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' scope='rows' value='Sum of count of bikes borrowed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:windspeed:qk]</cols>
+      </table>
+      <simple-id uuid='{43EF9649-DBF9-4B78-9AA4-4E02C985C047}' />
+    </worksheet>
+    <worksheet name='Number of bikes borrowed over time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[cnt]' derivation='None' name='[none:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:cnt:qk]' scope='rows' value='Count of bikes borrowed' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[tdy:date:qk]</cols>
+      </table>
+      <simple-id uuid='{61BB3E3A-9653-4DE5-9658-F893E1296B6F}' />
+    </worksheet>
+    <worksheet name='Q1, Q2. Number of bikes borrowed in different weather (PieChart)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[weathersit]' derivation='None' name='[none:weathersit:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[weathersit]' derivation='Sum' name='[sum:weathersit:qk]' pivot='key' type='quantitative' />
+            <column caption='Weathersit' datatype='integer' name='[weathersit]' role='measure' type='quantitative'>
+              <aliases>
+                <alias key='1' value='Clear, Few clouds, Partly cloudy, Partly cloudy' />
+                <alias key='2' value='Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist' />
+                <alias key='3' value='Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds' />
+                <alias key='4' value='Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:weathersit:qk]' field-type='quantitative' max-size='1' min-size='0' type='rangesize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[none:weathersit:ok]' />
+              <wedge-size column='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' />
+              <size column='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:weathersit:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C2BFD371-43F4-4516-B6C1-1C52A3E39C54}' />
+    </worksheet>
+    <worksheet name='Q3.Number of bikes borrowed on different days'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bar Plot comparing sum of the number of bikes borrowed on different days</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column-instance column='[weekday]' derivation='Attribute' name='[attr:weekday:ok]' pivot='key' type='ordinal' />
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[weekday]' derivation='None' name='[none:weekday:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column caption='Weekday' datatype='integer' name='[weekday]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' scope='rows' value='Sum of count of bikes' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weekday:ok]' value='Weekday'>
+              <formatted-text>
+                <run>Weekday</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weekday:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:weekday:qk]</cols>
+      </table>
+      <simple-id uuid='{5E84E70F-A1A8-48B3-B278-C93FFA3FCD3C}' />
+    </worksheet>
+    <worksheet name='Q4. Months are Bicycles borrowed the most(Pie)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bikes Borrowed in Different Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column caption='Mnth' datatype='integer' name='[mnth]' role='measure' type='quantitative' />
+            <column-instance column='[mnth]' derivation='None' name='[none:mnth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:mnth:qk]' palette='sunrise_sunset_diverging_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' field-type='quantitative' max-size='1' min-size='0' type='rangesize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[none:mnth:qk]' />
+              <wedge-size column='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]' />
+              <size column='[federated.12uqra81q06dm811f1anr0pxv05v].[none:mnth:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5371F0BC-5EAC-4066-8F32-38115D04DB9F}' />
+    </worksheet>
+    <worksheet name='Q5. Bikes Rented by Casual Users by Hours'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bar Plot shows the distribution of bike renting for casual users by hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column-instance column='[hr]' derivation='Attribute' name='[attr:hr:qk]' pivot='key' type='quantitative' />
+            <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+            <column caption='Hr' datatype='integer' name='[hr]' role='measure' type='quantitative' />
+            <column-instance column='[hr]' derivation='None' name='[none:hr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[casual]' derivation='Sum' name='[sum:casual:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:casual:qk]' scope='rows' value='Sum of count of bikes' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:casual:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:hr:qk]</cols>
+      </table>
+      <simple-id uuid='{CCDA759D-72AD-4667-88D1-9E91A4121416}' />
+    </worksheet>
+    <worksheet name='Q5. Bikes Rented by Registered Users by Hours'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bar Plot shows the distribution of bike renting for registered users by hours</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column-instance column='[hr]' derivation='Attribute' name='[attr:hr:qk]' pivot='key' type='quantitative' />
+            <column caption='Hr' datatype='integer' name='[hr]' role='measure' type='quantitative' />
+            <column-instance column='[hr]' derivation='None' name='[none:hr:qk]' pivot='key' type='quantitative' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[registered]' derivation='Sum' name='[sum:registered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:registered:qk]' scope='rows' value='Sum of count of bikes' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:registered:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:hr:qk]</cols>
+      </table>
+      <simple-id uuid='{418231F0-A700-47F2-AB9B-2CBD331F5111}' />
+    </worksheet>
+    <worksheet name='Q7. Best conditions for cycling (Humidity)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bikes Borrowed in Different Humidity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+            <column-instance column='[hum]' derivation='None' name='[none:hum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[hum]' derivation='Sum' name='[sum:hum:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]' palette='orange_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:hum:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:hum:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]</cols>
+      </table>
+      <simple-id uuid='{C8F58043-DF1D-45D0-9022-EE4A9F1F7C87}' />
+    </worksheet>
+    <worksheet name='Q7. Best conditions for cycling (temperature)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bikes Borrowed in Different Temperatures
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[temp]' derivation='None' name='[none:temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temp]' derivation='Sum' name='[sum:temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]' palette='orange_gold_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:temp:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:temp:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]</cols>
+      </table>
+      <simple-id uuid='{6B939D06-F593-4FB1-9966-E2C93D6A646A}' />
+    </worksheet>
+    <worksheet name='Q7. Best conditions for cycling (wind speed)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bikes Borrowed in Different Windspeeds</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column-instance column='[windspeed]' derivation='None' name='[none:windspeed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column caption='Windspeed' datatype='real' name='[windspeed]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:windspeed:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.12uqra81q06dm811f1anr0pxv05v].[none:windspeed:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[sum:cnt:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:windspeed:qk]</cols>
+      </table>
+      <simple-id uuid='{49C3A218-2318-429B-86BE-5B18DFD5A60E}' />
+    </worksheet>
+    <worksheet name='Temperature over time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[temp]' derivation='None' name='[none:temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Week-Trunc' name='[twk:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]' scope='rows' value='Temperature (Celsius)' />
+            <encoding attr='space' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[twk:date:qk]' field-type='quantitative' min='#2010-11-24 13:24:35.071#' range-type='fixedmin' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[twk:date:qk]</cols>
+      </table>
+      <simple-id uuid='{405BFFCF-2B9B-4847-8292-C8F7BB7BCCC1}' />
+    </worksheet>
+    <worksheet name='Temperature vs Humidity'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hour' name='federated.12uqra81q06dm811f1anr0pxv05v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.12uqra81q06dm811f1anr0pxv05v'>
+            <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+            <column-instance column='[hum]' derivation='None' name='[none:hum:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temp]' derivation='None' name='[none:temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]' scope='rows' value='Temperature (Celsius)' />
+            <format attr='title' class='0' field='[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]' scope='cols' value='Humidity' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+        </panes>
+        <rows>[federated.12uqra81q06dm811f1anr0pxv05v].[none:temp:qk]</rows>
+        <cols>[federated.12uqra81q06dm811f1anr0pxv05v].[none:hum:qk]</cols>
+      </table>
+      <simple-id uuid='{533AAF8B-E79B-4453-84DE-016D4199E327}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Analysis 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Windspeed</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>The plot shows that people borrow bicycles on lower windspeeds. The plot itself shows that the amount of people who borrow bicycles are highest when there is no wind and second highest around </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>0.2 windspeed</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>. After that, it </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>decreases the bigger the windspeed becomes.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Windspeed</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>The plot shows that people borrow bicycles on lower windspeeds. The plot itself shows that the amount of people who borrow bicycles are highest when there is no wind and second highest around </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>0.2 windspeed</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>. After that, it </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>decreases the bigger the windspeed becomes.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F816AF61-3020-4495-B73E-8729BFFBE102}' />
+    </dashboard>
+    <dashboard name='Analysis 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Humidity</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Helvetica Neue,Helvetica,Arial,sans-serif' fontsize='20'>The data shown in the lineplot above is a bit confusing because at first it seems that the higher the humidity is, the more people would borrow bicycles until after humidity passes 0.5, the data spread out into both high and low counts. This does show that there is a relationship between humidity and people borrowing bikes, but it does get unclear after a certain point. What I can say for sure is that </run>
+                  <run bold='true' fontcolor='#000000' fontname='Helvetica Neue,Helvetica,Arial,sans-serif' fontsize='20' underline='true'>up until 0.5 humidity, the higher the humidity the more people borrow bikes. However, after that it is spread out, though the highest count the graph has is a bit above 0.8 humidity.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='54' param='vert' w='84000' x='8000' y='8000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11609' id='3' w='98910' x='545' y='876'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis of Humidity</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86639' id='8' w='98910' x='545' y='12485'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Helvetica Neue,Helvetica,Arial,sans-serif' fontsize='20'>The data shown in the lineplot above is a bit confusing because at first it seems that the higher the humidity is, the more people would borrow bicycles until after humidity passes 0.5, the data spread out into both high and low counts. This does show that there is a relationship between humidity and people borrowing bikes, but it does get unclear after a certain point. What I can say for sure is that </run>
+                    <run bold='true' fontcolor='#000000' fontname='Helvetica Neue,Helvetica,Arial,sans-serif' fontsize='20' underline='true'>up until 0.5 humidity, the higher the humidity the more people borrow bikes. However, after that it is spread out, though the highest count the graph has is a bit above 0.8 humidity.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0462107F-05A3-45D1-9F7E-101E8B19909A}' />
+    </dashboard>
+    <dashboard name='Analysis 3'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis to Temperature</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>The plot shows that more people borrow bikes at temperatures below 0.6 and 0.8, especially at 0.7. Anything lower than 0.6 and higher than 0.8 shows a lot of reduction in borrowing bikes. This shows a clear relationship between the count of people borrowing bikes and the temperature.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='54' param='vert' w='84000' x='8000' y='8000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11609' id='3' w='98910' x='545' y='876'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>Analysis to Temperature</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86639' id='8' w='98910' x='545' y='12485'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>The plot shows that more people borrow bikes at temperatures below 0.6 and 0.8, especially at 0.7. Anything lower than 0.6 and higher than 0.8 shows a lot of reduction in borrowing bikes. This shows a clear relationship between the count of people borrowing bikes and the temperature.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2696FCDD-B487-4695-A888-11C5F200A24F}' />
+    </dashboard>
+    <dashboard name='Conclusion 1 and 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTIONS 1 AND 2:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>1. The results from the piechart conclude that the </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>most favourable </run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>weather for borrowing bikes and cycling is when the sky is mostly clear with a very few clouds.</run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>2. The </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>least favourable </run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>weather for cycling is when there is a thunderstorm, it is raining heavily, ice pallets are falling, when it is snowing or when vision is blocked due to mist and fog.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTIONS 1 AND 2:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>1. The results from the piechart conclude that the </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>most favourable </run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>weather for borrowing bikes and cycling is when the sky is mostly clear with a very few clouds.</run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>2. The </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>least favourable </run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>weather for cycling is when there is a thunderstorm, it is raining heavily, ice pallets are falling, when it is snowing or when vision is blocked due to mist and fog.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D0F42003-047B-4271-AC9E-CB04C4D7F274}' />
+    </dashboard>
+    <dashboard name='Conclusion 3'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 3:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>3. The days that cycles are borrowed the most seem to be </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>mostly equal</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> for all days of the week, although the highest seems to be</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>Æ </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>Saturdays</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 3:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>3. The days that cycles are borrowed the most seem to be </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>mostly equal</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> for all days of the week, although the highest seems to be</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='18'>Æ </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>Saturdays</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C8D22389-7CA0-4119-BECB-7761783FA318}' />
+    </dashboard>
+    <dashboard name='Conclusion 4'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 4:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>4. The Pie Chart above answers the question: &apos;Which Month are Bicycles borrowed the most?&apos;. It shows that people borrow bicycles the most during</run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'> August,</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> although July, June, and September come very close behind it.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='56' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='55' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 4:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>4. The Pie Chart above answers the question: &apos;Which Month are Bicycles borrowed the most?&apos;. It shows that people borrow bicycles the most during</run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'> August,</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> although July, June, and September come very close behind it.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{74836A57-4341-4D5A-A4C0-AB5519FCCA82}' />
+    </dashboard>
+    <dashboard name='Conclusion 5'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 5:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>5. As it can be seen from plots,</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>Æ </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>casual users like to bike from 13:00 to 17:00</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>, where as </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>registered users like to bike at 8:00 and at 17:00-18:00 period</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11595' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 5:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>5. As it can be seen from plots,</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>Æ </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>casual users like to bike from 13:00 to 17:00</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>, where as </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>registered users like to bike at 8:00 and at 17:00-18:00 period</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EF0D1DF6-948B-4B6A-A247-3B292CAD15B3}' />
+    </dashboard>
+    <dashboard name='Conclusion 6'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 6:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>6. </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>Weekdays are more popular</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> than working days.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='54' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 6:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>6. </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>Weekdays are more popular</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'> than working days.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3FDCEDFE-7EC6-4E0B-97BD-15F1FDCFAC9B}' />
+    </dashboard>
+    <dashboard name='Conclusion 7'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11596' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 7:</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86546' id='8' w='99034' x='483' y='12525'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>7. The answer to the question: &apos;Best conditions for cycling? (Humidity, Wind speed, temperature)&apos; is around </run>
+                  <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>0.5 humidity, 0.2 or less wind speed, and temperatures between 0.6 and 0.8.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='55' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='84000' id='54' param='vert' w='84000' x='8000' y='8000'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='11609' id='3' w='98910' x='545' y='876'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>CONCLUSIONS TO RESEARCH QUESTION 7:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86639' id='8' w='98910' x='545' y='12485'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='22'>7. The answer to the question: &apos;Best conditions for cycling? (Humidity, Wind speed, temperature)&apos; is around </run>
+                    <run bold='true' fontcolor='#24292e' fontname='Tableau Medium' fontsize='22' underline='true'>0.5 humidity, 0.2 or less wind speed, and temperatures between 0.6 and 0.8.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/analysis/submitted/Lab7.twb Files/Users/akshat/Desktop/weatherbike1.jpeg' w='42206' x='55071' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E2CFB27-2A86-42BC-B274-AF13F0F1264E}' />
+    </dashboard>
+    <dashboard name='Dataset Description'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='11' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='12362' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>ANALYSIS BY GROUP WEATHERBIKE (1028)</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='54924' id='8' w='99034' x='483' y='13291'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>INTRODUCTION TO OUR DATASET </run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Tableau Regular' fontsize='16'>The dataset we have chosen is a from a very reliable source(UCI Machine Learning Repository) which makes it a fit choice for our analysis. With no missing values and explicitly recorded data for bikes, there are several questions that we aim to answer with the data provided in the Bike Sharing dataset itself. With increase in awareness of the environmental harms caused by motor vehicle emissions and health benefits of cycling, bike sharing systems are gaining popularity all around the globe. Hence, we went ahead with this particular dataset.</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#000000' fontname='Tableau Regular' fontsize='16'>This dataset was provided by “Capital Bikeshare”, a bicycle sharing system in multiple counties around Washington D.C. and Virginia. The data contains detailed information in bike sharing in terms of days and hours. For our project, we’ll be using the hours data. This data presents us with data on how many people use bikesharing on every hour of every day for 2 full years, taking the temperature, weather, humidity, wind, and whether the user is registered or not. The data itself is collected from the 1st of January 2011 up until the 31st of December 2012. The dataset was created by the company to provide free public bike sharing information in hopes that they can be useful for people like developers, engineers, statisticians, and artists for the sake of analysis, development, visualization and more. The data itself is collected as it records the time and date when a bike is unlocked from a kiosk, how long it was used, and it matches it with the weather, temperature, air humidity, and windspeed that was recorded on each day</run>
+                  <run>Æ&#10;</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='30856' id='12' w='99034' x='483' y='68215'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='18' underline='true'>MEMBERS OF THE GROUP </run>
+                  <run>Æ&#10;&#10;</run>
+                  <run fontcolor='#555555' fontsize='16'>Akshat Poddar</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#555555' fontsize='16'>Askar Bolat</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#555555' fontsize='16'>Matthew Dante Sugiarto</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='19744' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/UCI logo.png' w='32951' x='57996' y='2091' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='60' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='59' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='12362' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>ANALYSIS BY GROUP WEATHERBIKE (1028)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='158' h='19744' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/UCI logo.png' w='32951' x='57996' y='2091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='54924' id='8' w='99034' x='483' y='13291'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='18'>INTRODUCTION TO OUR DATASET </run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Regular' fontsize='16'>The dataset we have chosen is a from a very reliable source(UCI Machine Learning Repository) which makes it a fit choice for our analysis. With no missing values and explicitly recorded data for bikes, there are several questions that we aim to answer with the data provided in the Bike Sharing dataset itself. With increase in awareness of the environmental harms caused by motor vehicle emissions and health benefits of cycling, bike sharing systems are gaining popularity all around the globe. Hence, we went ahead with this particular dataset.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#000000' fontname='Tableau Regular' fontsize='16'>This dataset was provided by “Capital Bikeshare”, a bicycle sharing system in multiple counties around Washington D.C. and Virginia. The data contains detailed information in bike sharing in terms of days and hours. For our project, we’ll be using the hours data. This data presents us with data on how many people use bikesharing on every hour of every day for 2 full years, taking the temperature, weather, humidity, wind, and whether the user is registered or not. The data itself is collected from the 1st of January 2011 up until the 31st of December 2012. The dataset was created by the company to provide free public bike sharing information in hopes that they can be useful for people like developers, engineers, statisticians, and artists for the sake of analysis, development, visualization and more. The data itself is collected as it records the time and date when a bike is unlocked from a kiosk, how long it was used, and it matches it with the weather, temperature, air humidity, and windspeed that was recorded on each day</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='30856' id='12' w='99034' x='483' y='68215'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='18' underline='true'>MEMBERS OF THE GROUP </run>
+                    <run>Æ&#10;&#10;</run>
+                    <run fontcolor='#555555' fontsize='16'>Akshat Poddar</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#555555' fontsize='16'>Askar Bolat</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#555555' fontsize='16'>Matthew Dante Sugiarto</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{882321C3-0473-4832-A20D-BFE6540A54A3}' />
+    </dashboard>
+    <dashboard name='Description of Dataset Columns Part 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9734' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='88408' id='8' w='99034' x='483' y='10663'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>instant</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column is the record index.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>dtoday</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the date of when the data is recorded.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>season</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the season in the form of the following </run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>= 1:winter, 2:spring, 3:summer, 4:fall</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>yr</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the year in the form of the following = 0:2011, 1:2012</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>mnth</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the month in the form of the numbers 1 to 12, each representing a month in order. (1:January, 2:February, etc.)</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>hr</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the hour in the day the bike was borrowed in the form of 0 to 23.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>holiday</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows if its a holiday or not (1 or 0).</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>weekday</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the day of the week.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>workingday</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows data when the day is neither weekend nor holiday its 1, otherwise its 0.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>weathersit</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the weather in a combined form as the following =</run>
+                  <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>1: Clear, Few clouds, Partly cloudy, Partly cloudy</run>
+                  <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist</run>
+                  <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds</run>
+                  <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='54' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='53' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9734' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='88408' id='8' w='99034' x='483' y='10663'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>instant</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column is the record index.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>dtoday</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the date of when the data is recorded.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>season</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the season in the form of the following </run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>= 1:winter, 2:spring, 3:summer, 4:fall</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>yr</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the year in the form of the following = 0:2011, 1:2012</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>mnth</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the month in the form of the numbers 1 to 12, each representing a month in order. (1:January, 2:February, etc.)</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>hr</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the hour in the day the bike was borrowed in the form of 0 to 23.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>holiday</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows if its a holiday or not (1 or 0).</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>weekday</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the day of the week.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>workingday</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows data when the day is neither weekend nor holiday its 1, otherwise its 0.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'>weathersit</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='480' rmargin='480'> column shows the weather in a combined form as the following =</run>
+                    <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>1: Clear, Few clouds, Partly cloudy, Partly cloudy</run>
+                    <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>2: Mist + Cloudy, Mist + Broken clouds, Mist + Few clouds, Mist</run>
+                    <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds</run>
+                    <run lmargin='930' rmargin='930'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='15' lmargin='930' rmargin='930'>4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1225BFEE-F78C-4BB4-BD6D-EE9F5216ECD8}' />
+    </dashboard>
+    <dashboard name='Description of Dataset Columns Part 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9735' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='88407' id='8' w='99034' x='483' y='10664'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontsize='20'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20'>temp</run>
+                  <run fontcolor='#000000' fontsize='20'> column shows the normalized temperature in the form of Celsius.</run>
+                  <run>Æ&#10;</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>atemp</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized feeling temperature in the form of Celsius.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>hum</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized humidity. The values are divided to 100 (max).</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>windspeed</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized wind speed. The values are divided to 67 (max).</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>casual</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of casual users.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>registered</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of registered users.</run>
+                  <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                  <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>cnt</run>
+                  <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of total rental bikes including both casual and registered.</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='54' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='53' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9735' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>DESCRIPTION OF EACH COLUMN OF THE DATASET</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='88407' id='8' w='99034' x='483' y='10664'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontsize='20'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20'>temp</run>
+                    <run fontcolor='#000000' fontsize='20'> column shows the normalized temperature in the form of Celsius.</run>
+                    <run>Æ&#10;</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>atemp</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized feeling temperature in the form of Celsius.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>hum</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized humidity. The values are divided to 100 (max).</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>windspeed</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the normalized wind speed. The values are divided to 67 (max).</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>casual</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of casual users.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>registered</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of registered users.</run>
+                    <run lmargin='480' rmargin='480'>Æ&#10;&#10;</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>The </run>
+                    <run bold='true' fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'>cnt</run>
+                    <run fontcolor='#000000' fontsize='20' lmargin='480' rmargin='480'> column shows the count of total rental bikes including both casual and registered.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BEA773CA-5D22-4CB6-A936-0A2456792321}' />
+    </dashboard>
+    <dashboard name='Q6.Weekdays or working-days(Weekday)'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98142' id='3' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/weekday.png' w='99034' x='483' y='929'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='28' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98142' id='3' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/weekday.png' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{268F2FF4-D344-4915-B11A-A478E241A568}' />
+    </dashboard>
+    <dashboard name='Research Questions'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='7' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='5' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='11595' id='3' w='99034' x='483' y='929'>
+                <formatted-text>
+                  <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>THESE ARE SOME OF THE QUESTIONS WE AIM TO EXPLORE THROUGH OUR ANALYSIS : </run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                <formatted-text>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>1. Which is the most favourable weather for cycling?</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>2. Which is the least favourable weather for cycling?</run>
+                  <run>Æ&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>Which days are cycles borrowed the most? </run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>3.Which days are cycles borrowed the most?</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>4. Which is the most favourable month for cycling? And why?</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>5. Compare average hours of cycling for casual and registered users and draw conclusions based on it.</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>6. Weekdays or working-days, which one is more popular for renting a bike?</run>
+                  <run>Æ&#10;&#10;&#10;</run>
+                  <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>7. Best conditions for cycling? (considering humidity, wind speed, temperature)</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' forceUpdate='true' h='38226' id='9' is-centered='0' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/weatherbike1.jpeg' w='42206' x='55003' y='13472' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='57' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='56' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='11595' id='3' w='99034' x='483' y='929'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Semibold' fontsize='22'>THESE ARE SOME OF THE QUESTIONS WE AIM TO EXPLORE THROUGH OUR ANALYSIS : </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='86547' id='8' w='99034' x='483' y='12524'>
+                  <formatted-text>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>1. Which is the most favourable weather for cycling?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>2. Which is the least favourable weather for cycling?</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>Which days are cycles borrowed the most? </run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>3.Which days are cycles borrowed the most?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>4. Which is the most favourable month for cycling? And why?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>5. Compare average hours of cycling for casual and registered users and draw conclusions based on it.</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>6. Weekdays or working-days, which one is more popular for renting a bike?</run>
+                    <run>Æ&#10;&#10;&#10;</run>
+                    <run fontcolor='#24292e' fontname='Tableau Medium' fontsize='15'>7. Best conditions for cycling? (considering humidity, wind speed, temperature)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' forceUpdate='true' h='38226' id='9' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/weatherbike1.jpeg' w='42206' x='55003' y='13472'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2DB52280-A0F0-43A7-9858-1E78FDE439E3}' />
+    </dashboard>
+    <dashboard name='Weekdays or working-days(Working Day)'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='98142' id='3' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/workingday.png' w='99034' x='483' y='929'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='29' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='28' param='vert' w='99034' x='483' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='98142' id='3' is-fixed='true' is-scaled='1' param='C:/Users/ASUS/Documents/GitHub/course-project-group_1028/images/workingday.png' w='99034' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1617BB58-79EF-4DD4-B2B4-6B37839002E9}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Temperature vs Humidity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{78F87A5A-00B5-46C7-9106-57EF15F2DDAA}' />
+    </window>
+    <window class='worksheet' name='Temperature over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{62A11305-2486-41E0-801D-600CCD7D94A9}' />
+    </window>
+    <window class='worksheet' name='Number of bikes borrowed over time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95839D9B-4E36-480B-8C66-3F4BBCCC8C01}' />
+    </window>
+    <window class='worksheet' name='Number of bikes borrowed in different seasons'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:season:ok]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{017316F1-A98B-41AE-9F62-18719ACE7FD2}' />
+    </window>
+    <window class='worksheet' name='Number of bikes borrowed in different windspeeds'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E75C38EF-1561-4EF5-9BF9-9B011532AEAD}' />
+    </window>
+    <window class='worksheet' name='Number of bikes borrowed in different weather situations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weathersit:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A63CA28-300D-4659-B21D-4AF34A7BEBC8}' />
+    </window>
+    <window class='worksheet' name='Casual users vs Humidity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC215072-71E4-41FD-93EA-E59CF59DD583}' />
+    </window>
+    <window class='dashboard' name='Dataset Description'>
+      <viewpoints />
+      <active id='9' />
+      <simple-id uuid='{5F3BA7CA-4277-4064-A94E-B6BF49942D97}' />
+    </window>
+    <window class='dashboard' name='Description of Dataset Columns Part 1'>
+      <viewpoints />
+      <active id='8' />
+      <simple-id uuid='{4F4393F0-DCDE-40F9-AD6D-E7D5D02ECF60}' />
+    </window>
+    <window class='dashboard' name='Description of Dataset Columns Part 2'>
+      <viewpoints />
+      <active id='8' />
+      <simple-id uuid='{8A86D30F-E29C-4F87-91B0-E667EB55BFB5}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Research Questions'>
+      <viewpoints />
+      <active id='9' />
+      <simple-id uuid='{85606C4F-D7A2-4554-83B8-5A2F3CDE4913}' />
+    </window>
+    <window class='worksheet' name='Q1, Q2. Number of bikes borrowed in different weather (PieChart)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[none:weathersit:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2A5E7FFA-BDED-4CEE-B92C-820D487D3D66}' />
+    </window>
+    <window class='dashboard' name='Conclusion 1 and 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{90033CDC-1BC8-471E-BEF6-A02CAA491607}' />
+    </window>
+    <window class='worksheet' name='Q3.Number of bikes borrowed on different days'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:weekday:ok]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9E38CC21-B44E-469E-B612-BC6FEA4BC98C}' />
+    </window>
+    <window class='dashboard' name='Conclusion 3'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{4F8BBE58-C70B-49FA-A920-629C8FD73273}' />
+    </window>
+    <window class='worksheet' name='Q4. Months are Bicycles borrowed the most(Pie)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[none:mnth:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{46BB3F98-D302-450D-85C2-04C52184A064}' />
+    </window>
+    <window class='dashboard' name='Conclusion 4'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{6CE7E6EF-8418-41E6-83F3-9F5ABFE87678}' />
+    </window>
+    <window class='worksheet' name='Q5. Bikes Rented by Casual Users by Hours'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E6118773-47EA-4E17-BE05-AF7CE2F5894A}' />
+    </window>
+    <window class='worksheet' name='Q5. Bikes Rented by Registered Users by Hours'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[attr:hr:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7FEBE2D-C45A-48E5-ABFE-FC6675456071}' />
+    </window>
+    <window class='dashboard' name='Conclusion 5'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{2777CE58-0C79-4A7B-BF93-88532135BEC2}' />
+    </window>
+    <window class='dashboard' name='Q6.Weekdays or working-days(Weekday)'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{0D3EE470-B9EA-467D-A4F2-D2552CA4D80D}' />
+    </window>
+    <window class='dashboard' name='Weekdays or working-days(Working Day)'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{0C1837A3-D6EA-4129-BDEE-7A6A65253005}' />
+    </window>
+    <window class='dashboard' name='Conclusion 6'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{FD96CD3F-2317-42F0-B2C2-0D8FC13F1A0E}' />
+    </window>
+    <window class='worksheet' name='Q7. Best conditions for cycling (wind speed)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[none:windspeed:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBFB1910-F3A5-4D1F-9433-896448596A0D}' />
+    </window>
+    <window class='dashboard' name='Analysis 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{81B84FFB-C8D1-40DC-80A3-B4A6D2B61D09}' />
+    </window>
+    <window class='worksheet' name='Q7. Best conditions for cycling (Humidity)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:hum:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{14CA9BBD-1F89-4EEE-980F-C271B89A107C}' />
+    </window>
+    <window class='dashboard' name='Analysis 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{FB5A118F-FB94-427B-A15D-4A51E6123BD5}' />
+    </window>
+    <window class='worksheet' name='Q7. Best conditions for cycling (temperature)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12uqra81q06dm811f1anr0pxv05v].[sum:temp:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{230BFF23-AF32-40FA-B845-BFA334474E4D}' />
+    </window>
+    <window class='dashboard' name='Analysis 3'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{C542F144-2E5B-434D-9D7D-C0C175E0BC57}' />
+    </window>
+    <window class='dashboard' name='Conclusion 7'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{27C855EA-1334-46A5-AEF3-50E41D7B507E}' />
+    </window>
+  </windows>
+</workbook>
